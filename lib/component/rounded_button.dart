@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 
-class Page_Heading extends StatelessWidget {
-  Page_Heading({this.heading, this.color, this.height, this.onPressed});
+class RoundedButton extends StatelessWidget {
+  RoundedButton({this.heading, this.color, this.height, this.onPressed});
 
   final String heading;
   final Color color;
   final double height;
   final Function onPressed;
+
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -21,6 +22,9 @@ class Page_Heading extends StatelessWidget {
           height: height,
           child: Text(
             heading,
+            style: TextStyle(
+              color: Colors.white,
+            ),
           ),
         ),
       ),

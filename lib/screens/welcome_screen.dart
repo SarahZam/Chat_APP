@@ -1,4 +1,4 @@
-import 'package:flash_chat/component/page_heading.dart';
+import 'package:flash_chat/component/rounded_button.dart';
 import 'package:flash_chat/screens/login_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -72,14 +72,14 @@ class _WelcomeScreenState extends State<WelcomeScreen>
             SizedBox(
               height: 48.0,
             ),
-            Page_Heading(
+            RoundedButton(
                 height: 42.0,
                 heading: 'Login',
                 color: Colors.lightBlue,
                 onPressed: () {
                   Navigator.pushNamed(context, LoginScreen.id);
                 }),
-            Page_Heading(
+            RoundedButton(
                 height: 42.0,
                 heading: 'Register',
                 color: Colors.lightBlue,
